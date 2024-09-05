@@ -10,8 +10,15 @@ namespace Fundamentos_de_C__para_Principiantes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello word!");
-            Console.WriteLine("esta es otra linea de texto");
+            int numero = 10;
+            int resultado = numero * 5;
+            Console.WriteLine("{0}", resultado);
+
+            int suma = 8 + 20;
+            Console.WriteLine("{0}", suma);
+
+            string cadena = "Este es un Texto";
+            Console.WriteLine("{0}", cadena);
         }
     }
 }
