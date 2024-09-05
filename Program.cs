@@ -10,28 +10,19 @@ namespace Fundamentos_de_C__para_Principiantes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\n usando el break");
-            for (int i = 0; i < 50; i++)
-            {
-                if (i == 20)
-                {
-                    break;
-                }
-                Console.WriteLine("Valor de el contado i : {0}", i);
-            }
-            Console.WriteLine("\n usando el Continue");
-            for (int i = 0; i < 50; i++)
-            {
-                if(i % 2 == 0)
-                {
-                    continue;
-                }
-                if (i == 20)
-                {
-                    break;
-                }
-                Console.WriteLine("Valor de el contado i : {0}", i);
-            }
+            Console.WriteLine("Suma de dos números");
+            Console.Write("Ingresa número 1: ");
+            // Los datos se leen como cadena
+            string dato = Console.ReadLine();
+            // Convertir a número int.Parse
+            int n1 = int.Parse(dato);
+
+            Console.Write("Ingresa número 2: ");
+            dato = Console.ReadLine();
+            int n2 = int.Parse(dato);
+
+            int suma = n1 + n2;
+            Console.WriteLine("El resultado es: {0}", suma);
         }
     }
 }
