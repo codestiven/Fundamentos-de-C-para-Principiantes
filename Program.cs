@@ -10,65 +10,28 @@ namespace Fundamentos_de_C__para_Principiantes
     {
         static void Main(string[] args)
         {
-            // If
-            int num = 10;
-            if (num > 5)
+            //Ciclo For
+            Console.WriteLine("usando el ciclo For");
+            for (int i = 0; i < 50; i++) 
             {
-                Console.WriteLine("num es mayor que 5");
+             Console.WriteLine("Valor de el contado i : {0}" , i);
             }
-
-            // Condicional Compuesta
-            string user = "user1";
-            string pass = "hola123";
-            if (user == "user1" && pass == "hola123")
+            //Ciclo While
+            Console.WriteLine("\n usando el ciclo while");
+            int n = 0;
+            while (n < 50)
             {
-                Console.WriteLine("Acceso correcto");
+                Console.WriteLine("Valor de el contador i : {0}" , n);
+                n++;
             }
-
-            // If - Else
-            int edad = 13;
-            if (edad >= 18)
+            //Ciclo Do - while
+            int c = 0;
+            Console.WriteLine("\n usando el ciclo Do - while");
+            do
             {
-                Console.WriteLine("Mayor de edad");
-            }
-            else
-            {
-                Console.WriteLine("Menor de edad");
-            }
-
-            // If - Else If
-            int a = 8;
-            int b = 8;
-            if (a > b)
-            {
-                Console.WriteLine("{0} > {1}", a, b);
-            }
-            else if (a < b)
-            {
-                Console.WriteLine("{0} < {1}", a, b);
-            }
-            else
-            {
-                Console.WriteLine("{0} == {1}", a, b);
-            }
-
-            // Switch
-            string codigo = "A45";
-            switch (codigo)
-            {
-                case "A1":
-                    Console.WriteLine("Producto 1");
-                    break;
-                case "A2":
-                    Console.WriteLine("Producto 2");
-                    break;
-                case "A3":
-                    Console.WriteLine("Producto 3");
-                    break;
-                default:
-                    Console.WriteLine("Producto no encontrado");
-                    break;
-            }
+                Console.WriteLine("Valor de el contador i : {0}", c);
+                c++;
+            }while (c < 50);
         }
     }
 }
