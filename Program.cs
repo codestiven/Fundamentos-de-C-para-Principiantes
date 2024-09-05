@@ -10,6 +10,8 @@ namespace Fundamentos_de_C__para_Principiantes
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello word!");
+            Console.WriteLine("esta es otra linea de texto");
         }
     }
 }
