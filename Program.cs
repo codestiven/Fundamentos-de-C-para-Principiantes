@@ -10,19 +10,25 @@ namespace Fundamentos_de_C__para_Principiantes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Suma de dos números");
-            Console.Write("Ingresa número 1: ");
-            // Los datos se leen como cadena
-            string dato = Console.ReadLine();
-            // Convertir a número int.Parse
-            int n1 = int.Parse(dato);
+            Console.WriteLine("reto tabla de multiplicar");
+            int multiplicando = 0;
+            int multiplicador = 0;
+            Console.Write("hasta donde deseas tu tabla : ");
+            int count = int.Parse(Console.ReadLine());
+            while (multiplicador <= count)
+            {
+                Console.WriteLine("\ntabla de el " + multiplicador + "\n");
+                for (multiplicando = 0; multiplicando <= 12; multiplicando++)
+                {
+                    Console.WriteLine("{0} + {1} = {2}" , multiplicando , multiplicador , multiplicando * multiplicador);
 
-            Console.Write("Ingresa número 2: ");
-            dato = Console.ReadLine();
-            int n2 = int.Parse(dato);
+                }
+                multiplicador++;
+            
 
-            int suma = n1 + n2;
-            Console.WriteLine("El resultado es: {0}", suma);
+
+
+            }
         }
     }
 }
