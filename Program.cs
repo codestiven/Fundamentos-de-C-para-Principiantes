@@ -11,7 +11,11 @@ namespace Fundamentos_de_C__para_Principiantes
         static void Main(string[] args)
         {
 
-            CuentaBancaria cuenta = new CuentaBancaria("000000000" , "Stiven" , 15);
+            CuentaBancaria cuenta = new CuentaBancaria("000000000" , "Stiven" );
+
+            cuenta.Saldo = -15;
+
+            Console.WriteLine( cuenta.Saldo );
             
 
         }
