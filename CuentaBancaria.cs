@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,14 +12,18 @@ namespace Fundamentos_de_C__para_Principiantes
         public string NoCuenta { get; set; }
         public string Usuario { get; set; }
 
+        public static string Banco { get; set; }
+
+
+
 
         //backing field
         private decimal _Saldo;
 
         // propiedad completa
-        public decimal Saldo 
-        { 
-          get { return _Saldo; }
+        public decimal Saldo
+        {
+            get { return _Saldo; }
             set
             {    /*
              if (value <= 0) 
@@ -32,25 +37,31 @@ namespace Fundamentos_de_C__para_Principiantes
 
                 _Saldo = value < 0 ? 0 : value;
             }
-        
-        }  
+
+        }
 
 
         #region CuentaBancaria
-        public CuentaBancaria(string NoCuenta , String Usuario ) 
+        public CuentaBancaria(string NoCuenta, String Usuario)
         {
             NoCuenta = NoCuenta;
             Usuario = Usuario;
-            Saldo = Saldo;
+
 
 
         }
         #endregion
 
-        public void Retirar(Decimal cantidad) 
+        public void Retirar(Decimal cantidad)
         {
-           Saldo -= cantidad;
-        
+            Saldo -= cantidad;
+
+        }
+
+        public static void NewBanco( string banco)
+        {
+            Banco = banco;
+
         }
 
     }

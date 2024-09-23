@@ -13,13 +13,11 @@ namespace Fundamentos_de_C__para_Principiantes
 
             CuentaBancaria cuenta = new CuentaBancaria("000000000" , "Stiven" );
 
-            cuenta.Saldo = 1500;
+    
 
-            Console.WriteLine( cuenta.Saldo );
+            CuentaBancaria.NewBanco("BHD");
 
-            cuenta.Retirar(500);
 
-            Console.WriteLine(cuenta.Saldo);
 
 
 
