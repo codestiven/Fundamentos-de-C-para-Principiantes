@@ -47,5 +47,11 @@ namespace Fundamentos_de_C__para_Principiantes
         }
         #endregion
 
+        public void Retirar(Decimal cantidad) 
+        {
+           Saldo -= cantidad;
+        
+        }
+
     }
 }
